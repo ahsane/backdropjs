@@ -7,7 +7,7 @@ Backdrop filter polyfill for browsers that do not support it
 
 ## Documentation
 First add the script
-`<script src="backdrop-polyfill-chrome.js"></script></script>`
+`<script src="backdrop-polyfill-chrome.js"></script>`
 
 Then use the API
 `backdrop(backdropsource, backdropapply, blur, scroller)`
