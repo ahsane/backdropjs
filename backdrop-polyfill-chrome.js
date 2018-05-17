@@ -29,7 +29,9 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
 		backdropdoc.open()
 		backdropdoc.write(backdropsource)
 		var markup =
-			'<div id="iniframe"></div><style>body {overflow: hidden; filter: blur(' +
+			'<div id="iniframe"></div><style>body {overflow: hidden; -webkit-filter: blur(' +
+			blur +
+			'px);filter: blur(' +
 			blur +
 			'px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}</style>'
 		backdropdoc.write(markup)
