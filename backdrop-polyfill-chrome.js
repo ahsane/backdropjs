@@ -44,7 +44,7 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
 					var scrollx = this.scrollX
 					backdropframe.contentWindow.window.scrollTo(scrollx, scroll)
 				},
-				false
+				true
 			)
 		}
 	}
