@@ -3,6 +3,8 @@ Backdrop filter polyfill for browsers that do not support it
 
 #### Safari already has backdrop-filter support, so this is not needed for it.
 
+## Demo https://ahsane.github.io/backdrop-polyfill-chrome/index.html
+
 ## Documentation
 First add the script
 `<script src="backdrop-polyfill-chrome.js"></script></script>`
