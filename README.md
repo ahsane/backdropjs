@@ -19,9 +19,9 @@ backdropapply: The dom element where backdrop is going to be applied to
 
 blur: The amout of blur (equivalent to `backdropfilter: blur`)
 
-scroller: (string [yes/no]) Keep this to *yes*. 
+scroller: `(string [yes/no])` Keep this to *yes*. 
 
 Example: `backdrop(document.documentElement.outerHTML, document.getElementById('xx'), 20, "yes");`
 
 
-**Current limitation:** This works only for static content. Working on supporting dynamic content. 
+<span style="color:blue">Current limitation:</span> This works only for static content. Working on supporting dynamic content. 
