@@ -5,8 +5,6 @@ Backdrop filter polyfill for browsers that do not support it
 
 ## Demo https://ahsane.github.io/backdrop-polyfill-chrome/index.html
 
-### Current limitation: This works only for static content. Working on supporting dynamic content. 
-
 ## Documentation
 First add the script
 `<script src="backdrop-polyfill-chrome.js"></script>`
@@ -23,3 +21,6 @@ blur: the amout of blur (equivalent to `backdropfilter: blur`)
 scroller: (string) keep it to yes.
 
 example: `backdrop(document.documentElement.outerHTML, document.getElementById('xx'), 20, "yes");`
+
+
+**Current limitation:** This works only for static content. Working on supporting dynamic content. 
