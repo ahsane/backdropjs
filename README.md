@@ -23,5 +23,4 @@ scroller: `(string [yes/no])` Keep this to *yes*.
 
 Example: `backdrop(document.documentElement.outerHTML, document.getElementById('xx'), 20, "yes");`
 
-
-<span style="color:blue">Current limitation:</span> This works only for static content. Working on supporting dynamic content. 
+- **Current limitation:** This works only for static content. 
