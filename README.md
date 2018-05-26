@@ -5,6 +5,8 @@ Backdrop filter polyfill for browsers that do not support it
 
 ## Demo https://ahsane.github.io/backdrop-polyfill-chrome/index.html
 
+### Current limitation: This works only for static content. Working on supporting dynamic content. 
+
 ## Documentation
 First add the script
 `<script src="backdrop-polyfill-chrome.js"></script>`
