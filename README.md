@@ -19,7 +19,7 @@ backdropsource: The dom element where backdrop is going to be applied from
 
 backdropapply: The dom element where backdrop is going to be applied to
 
-blur: The amout of blur (equivalent to `backdrop-filter: blur`)
+blur: The amout of blur in px (equivalent to `backdrop-filter: blur`)
 
 scroller: `(string [yes/no])` Keep this to *yes*. 
 
