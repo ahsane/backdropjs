@@ -2,7 +2,6 @@
  * Author: AhsanEjaz
  * Twitter: https://twitter.com/AhsanEjazA
  * GitHub: https://github.com/AhsanE
- * Note: The polyfill requires Javscript.
  * License: MIT
  */
 
