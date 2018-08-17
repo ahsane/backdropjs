@@ -41,7 +41,7 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
 				function(event) {
 					var scroll = this.scrollY
 					var scrollx = this.scrollX
-					scroll = scroll - (backdropapply.offsetHeight * 2);
+					scroll = scroll - (backdropapply.offsetHeight * 1);
 					backdropframe.contentWindow.window.scrollTo(scrollx, scroll)
 				},
 				true
