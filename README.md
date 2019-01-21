@@ -1,6 +1,6 @@
-# CSS backdrop-filter polyfill
+# CSS backdrop filter polyfill
 
-**Demo:** https://ahsane.github.io/backdrop-polyfill-chrome/index.html
+**Demo:** https://ahsane.github.io/backdropjs/index.html
 
 Backdrop filter polyfill for browsers that do not support it
 
@@ -10,7 +10,7 @@ Backdrop filter polyfill for browsers that do not support it
 **Current limitation:** This works only for static content. 
 
 First add the script
-`<script src="backdrop-polyfill-chrome.js"></script>`
+`<script src="backdrop.js"></script>`
 
 Then use the API
 `backdrop(backdropsource, backdropapply, blur, scroller)`
