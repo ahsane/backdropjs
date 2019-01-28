@@ -13,7 +13,7 @@ var backdropapply // (DOM ELEMENT) should be a DOM element where backdrop is app
 var blur // (number) should be a number to represent a blur value in px
 var scroller // (string) should the backdrop HTML scroll to the position of page (yes / no)
 
-export function backdrop(backdropsource, backdropapply, blur, scroller) {
+function backdrop(backdropsource, backdropapply, blur, scroller) {
 	if (document.getElementById('iniframe') == null) {
 		backdropframe = document.createElement('iframe')
 		backdropframe.style.border = 'none'
