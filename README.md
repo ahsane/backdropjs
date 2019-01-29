@@ -1,3 +1,5 @@
+[![NPM version](https://img.shields.io/npm/v/backdropjs.svg)](https://www.npmjs.com/package/backdropjs)
+
 # CSS backdrop filter polyfill
 
 **Demo:** https://ahsane.github.io/backdropjs/index.html 
