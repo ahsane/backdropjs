@@ -8,7 +8,7 @@ Backdrop filter polyfill for browsers that do not support it
 
 #### Safari already has backdrop-filter support, so this is not needed for it.
 ### NPM
-`npm install backdropjs --save-dev`
+`npm install backdropjs --save`
 
 ## Documentation
 **Current limitation:** This works only for static content. 
