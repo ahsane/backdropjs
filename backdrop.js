@@ -8,10 +8,10 @@
 /**
  * @param {DOMElement} backdropsource
  * @param {DOMElement} backdropapply
- * @param {number} blur
+ * @param {number} filter
  * @param {boolean} scroller
  */
-function backdrop(backdropsource, backdropapply, blur, scroller) {
+function backdrop(backdropsource, backdropapply, filter, scroller) {
     let backdropframe // reserved variable
     if (document.getElementById('iniframe') == null) {
         backdropframe = document.createElement('iframe')
@@ -27,11 +27,7 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
         backdropdoc.open()
         backdropdoc.write(backdropsource)
         var markup =
-            '<div id="iniframe"></div><style>body {overflow: hidden; -webkit-filter: blur(' +
-            blur +
-            'px);filter: blur(' +
-            blur +
-            'px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}</style>'
+            '<div id="iniframe"></div><style>body {overflow: hidden; -webkit-filter:' + filter + ';filter:' + filter + '; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}</style>'
         backdropdoc.write(markup)
         backdropdoc.close()
         if (scroller) {
