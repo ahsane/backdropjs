@@ -5,15 +5,14 @@
  * License: MIT
  */
 
-var backdropframe // reserved variable
-var backdropdoc // reserved (reference to the backdropframe contentwindow)
-
-var backdropsource // (DOM ELEMENT) should be a DOM element which is the source for the backdrop
-var backdropapply // (DOM ELEMENT) should be a DOM element where backdrop is applied
-var blur // (number) should be a number to represent a blur value in px
-var scroller // (string) should the backdrop HTML scroll to the position of page (yes / no)
-
+/**
+* @param {DOMElement} backdropsource
+* @param {DOMElement} backdropapply
+* @param {number} blur
+* @param {boolean} scroller
+*/
 function backdrop(backdropsource, backdropapply, blur, scroller) {
+	const backdropframe // reserved variable
 	if (document.getElementById('iniframe') == null) {
 		backdropframe = document.createElement('iframe')
 		backdropframe.style.border = 'none'
@@ -24,7 +23,7 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
 	}
 
 	function addbackdrop() {
-		backdropdoc = backdropframe.contentWindow.document
+		const backdropdoc = backdropframe.contentWindow.document
 		backdropdoc.open()
 		backdropdoc.write(backdropsource)
 		var markup =
@@ -35,7 +34,7 @@ function backdrop(backdropsource, backdropapply, blur, scroller) {
 			'px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}</style>'
 		backdropdoc.write(markup)
 		backdropdoc.close()
-		if (scroller == 'yes') {
+		if (scroller) {
 			window.addEventListener(
 				'scroll',
 				function(event) {
