@@ -26,7 +26,7 @@ function backdrop(backdropsource, backdropapply, filter, scroller) {
         const backdropdoc = backdropframe.contentWindow.document;
         backdropdoc.open();
         backdropdoc.write(backdropsource);
-        let markup = `<div id="iniframe"/>body{overflow:hidden;-webkit-filter:${filter};filter:${filter};-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;}</style>`;
+        let markup = `<div id="iniframe"/><style>body{overflow:hidden;-webkit-filter:${filter};filter:${filter};-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none; user-select:none;}</style>`;
         backdropdoc.write(markup);
         backdropdoc.close();
         if (scroller) {
