@@ -6,7 +6,7 @@
 
 Backdrop filter polyfill for browsers that do not support it
 
-#### Safari, Chrome, Edge already has backdrop-filter support, so this is not needed for it.
+#### Safari, Chrome, Edge already has backdrop-filter support, so this is not needed for them.
 ### Package Manager
 `npm install backdropjs --save`
 
