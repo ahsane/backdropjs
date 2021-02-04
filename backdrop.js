@@ -1,6 +1,6 @@
 /**
  * Author: AhsanEjaz
- * Twitter: https://twitter.com/AhsanEjazA
+ * Twitter: https://twitter.com/_ahsanejaz
  * GitHub: https://github.com/AhsanE
  * License: MIT
  */
